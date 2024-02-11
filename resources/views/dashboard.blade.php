@@ -502,12 +502,11 @@
                             <div class="i8v96MUlFwGv9qJUkAx7 RZmKBZs1E1eXw8vkE6jY" role="none">
                                 <p class="c8dCx6gnV43hTOLV6ks5 __9sbu0yrzdhGIkLWNXl OyABRrnTV_kvHV7dJ0uE"
                                     role="none">
-                                    Neil Sims
+                                    {{ Auth::user()->name }}
                                 </p>
                                 <p class="c8dCx6gnV43hTOLV6ks5 ezMFUVl744lvw6ht0lFe __9sbu0yrzdhGIkLWNXl vfNYjqjYMlN1XskEucCt EJIoL6514Ry8r7nh011L"
                                     role="none">
-                                    @if (Auth::session())
-                                    @endif
+                                    {{ Auth::user()->email }}
                                 </p>
                             </div>
                             <ul class="_bVaO2NfVVP88LtHWYlv" role="none">
