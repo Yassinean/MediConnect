@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MedecinController;
+use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin');
+Route::get('/patient/home', [PatientController::class, 'index'])->name('patient');
+Route::get('/doctor/home', [MedecinController::class, 'index'])->name('doctor');
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -28,4 +38,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
