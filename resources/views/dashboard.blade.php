@@ -246,7 +246,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://flowbite.com/application-ui/demo/kanban/"
+                                <a href="{{route('speciality.ajouterSpeciality')}}"
                                     class="d3C8uAdJKNl1jzfE9ynq __9sbu0yrzdhGIkLWNXl _43MO1gcdi2Y0RJW1uHL mveJTCIb2WII7J4sY22F _7KA5gD55t2lxf9Jkj20 YRrCJSr_j5nopfm4duUc Q_jg_EPdNf9eDMn1mLI2 FJRldeiG2gFGZfuKgp88 BpcA_ZTX79XDgSc71n2v duXR6Hcu_44X_243WcOl OPrb_iG5WDy_7F05BDOX">
                                     <svg class="VQS2tmQ_zFyBOC2tkmto YIUegm7fh_CpJbivTu6B MnxxlQlR1H0xJuMEE8Yr PeR2JZ9BZHYIH8Ea3F36 bcsWqjK52oeyT6oeC2Az gZ3KuFw1JESHhOJhjT8j _Oyukq8JlN1X9w2FmPds XIIs8ZOri3wm8Wnj9N_y Lld6j9B1iilEqA6j31e4"
                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +255,20 @@
                                         </path>
                                     </svg>
                                     <span class="_74lpPUMEtHf6F0_fjLe oA7zcT_42jVeFuWTXQnq BHrWGjM1Iab_fAz0_91H"
-                                        sidebar-toggle-item="">Kanban</span>
+                                        sidebar-toggle-item="">Specialités</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('medicament.allMedicament') }}"
+                                    class="d3C8uAdJKNl1jzfE9ynq __9sbu0yrzdhGIkLWNXl _43MO1gcdi2Y0RJW1uHL mveJTCIb2WII7J4sY22F _7KA5gD55t2lxf9Jkj20 YRrCJSr_j5nopfm4duUc Q_jg_EPdNf9eDMn1mLI2 FJRldeiG2gFGZfuKgp88 BpcA_ZTX79XDgSc71n2v duXR6Hcu_44X_243WcOl OPrb_iG5WDy_7F05BDOX">
+                                    <svg class="VQS2tmQ_zFyBOC2tkmto YIUegm7fh_CpJbivTu6B MnxxlQlR1H0xJuMEE8Yr PeR2JZ9BZHYIH8Ea3F36 bcsWqjK52oeyT6oeC2Az gZ3KuFw1JESHhOJhjT8j _Oyukq8JlN1X9w2FmPds XIIs8ZOri3wm8Wnj9N_y Lld6j9B1iilEqA6j31e4"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                                        </path>
+                                    </svg>
+                                    <span class="_74lpPUMEtHf6F0_fjLe oA7zcT_42jVeFuWTXQnq BHrWGjM1Iab_fAz0_91H"
+                                        sidebar-toggle-item="">Médicament</span>
                                 </a>
                             </li>
                             <li>
@@ -354,13 +367,11 @@
                                 <div class="VQS2tmQ_zFyBOC2tkmto">
                                     <span
                                         class="q1oXbofRCOhVhOSB8tiU IOPhczRgtphv6NdNBDjj wgkxUJNDca22__ptDPRh __9sbu0yrzdhGIkLWNXl cdZDaAM7xDQV_z8X7CiP OyABRrnTV_kvHV7dJ0uE">
-                                        @if (Auth::user()->role == 'Patient')
-                                            {{ Auth::user()->count() }}
-                                        @endif
+                                        {{ $patientCount }}
                                     </span>
                                     <h3
                                         class="d3C8uAdJKNl1jzfE9ynq _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 XIIs8ZOri3wm8Wnj9N_y">
-                                        New products this week</h3>
+                                        Nombre de Patients</h3>
                                 </div>
                                 <div
                                     class="YRrCJSr_j5nopfm4duUc _74lpPUMEtHf6F0_fjLe URF_PdoDtDpDi8BZQL94 Q_jg_EPdNf9eDMn1mLI2 QkJPyfv8DpRcr_CZe6OJ SXX5V42dZ6Fw3QpmjvbD d3C8uAdJKNl1jzfE9ynq IOPhczRgtphv6NdNBDjj _slPOgYG58UZfxi9teaV sh9_WSzIEMjMvUiGrRaF">
@@ -381,10 +392,12 @@
                             <div class="YRrCJSr_j5nopfm4duUc Q_jg_EPdNf9eDMn1mLI2">
                                 <div class="VQS2tmQ_zFyBOC2tkmto">
                                     <span
-                                        class="q1oXbofRCOhVhOSB8tiU IOPhczRgtphv6NdNBDjj wgkxUJNDca22__ptDPRh __9sbu0yrzdhGIkLWNXl cdZDaAM7xDQV_z8X7CiP OyABRrnTV_kvHV7dJ0uE">5,355</span>
+                                        class="q1oXbofRCOhVhOSB8tiU IOPhczRgtphv6NdNBDjj wgkxUJNDca22__ptDPRh __9sbu0yrzdhGIkLWNXl cdZDaAM7xDQV_z8X7CiP OyABRrnTV_kvHV7dJ0uE">
+                                        {{ $medecinCount }}
+                                    </span>
                                     <h3
                                         class="d3C8uAdJKNl1jzfE9ynq _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 XIIs8ZOri3wm8Wnj9N_y">
-                                        Visitors this week</h3>
+                                        Nombre du medecins</h3>
                                 </div>
                                 <div
                                     class="YRrCJSr_j5nopfm4duUc _74lpPUMEtHf6F0_fjLe URF_PdoDtDpDi8BZQL94 Q_jg_EPdNf9eDMn1mLI2 QkJPyfv8DpRcr_CZe6OJ SXX5V42dZ6Fw3QpmjvbD d3C8uAdJKNl1jzfE9ynq IOPhczRgtphv6NdNBDjj _slPOgYG58UZfxi9teaV sh9_WSzIEMjMvUiGrRaF">
@@ -405,10 +418,12 @@
                             <div class="YRrCJSr_j5nopfm4duUc Q_jg_EPdNf9eDMn1mLI2">
                                 <div class="VQS2tmQ_zFyBOC2tkmto">
                                     <span
-                                        class="q1oXbofRCOhVhOSB8tiU IOPhczRgtphv6NdNBDjj wgkxUJNDca22__ptDPRh __9sbu0yrzdhGIkLWNXl cdZDaAM7xDQV_z8X7CiP OyABRrnTV_kvHV7dJ0uE">385</span>
+                                        class="q1oXbofRCOhVhOSB8tiU IOPhczRgtphv6NdNBDjj wgkxUJNDca22__ptDPRh __9sbu0yrzdhGIkLWNXl cdZDaAM7xDQV_z8X7CiP OyABRrnTV_kvHV7dJ0uE">
+                                        {{ $specialityCount }}
+                                    </span>
                                     <h3
                                         class="d3C8uAdJKNl1jzfE9ynq _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 XIIs8ZOri3wm8Wnj9N_y">
-                                        User signups this week</h3>
+                                        Nombre de specialités</h3>
                                 </div>
                                 <div
                                     class="YRrCJSr_j5nopfm4duUc _74lpPUMEtHf6F0_fjLe URF_PdoDtDpDi8BZQL94 Q_jg_EPdNf9eDMn1mLI2 QkJPyfv8DpRcr_CZe6OJ SXX5V42dZ6Fw3QpmjvbD d3C8uAdJKNl1jzfE9ynq IOPhczRgtphv6NdNBDjj aKB6odMbznaNbQj0JRKh xEwJjoRQELUEmxugJ_gr">
@@ -539,7 +554,7 @@
                                                         class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
                                                         Amount
                                                     </th>
-                                                    <th scope="col"
+                                                    <th colspan="2"
                                                         class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
                                                         Status
                                                     </th>
@@ -563,6 +578,7 @@
                                                     <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
                                                         <form action="">
                                                             @csrf
+                                                            @method('DELETE')
                                                             <button
                                                                 class="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-md">
                                                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -576,7 +592,11 @@
                                                                 Delete
                                                             </button>
                                                         </form>
+                                                    </td>
+                                                    <td>
                                                         <form action="">
+                                                            @csrf
+                                                            @method('PUT')
                                                             <button
                                                                 class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
                                                                 <svg xmlns="http://www.w3.org/2000/svg"
