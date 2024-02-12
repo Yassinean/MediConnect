@@ -14,7 +14,7 @@
     <link rel="canonical" href="https://flowbite.com/application-ui/demo/">
 
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
@@ -424,9 +424,81 @@
                             <div id="week-signups-chart"></div>
                         </div>
                     </div>
-                    <div class="h-10">
-                        <<<<<<<<<<<<<<<>>>>>>>>>>>>>>>
+                    <div class="h-4"></div>
+                    <div
+                        class="_wYiJGbRZyFZeCc8y7Sf _Ybd3WwuTVljUT4vEaM3 mveJTCIb2WII7J4sY22F mngKhi_Rv06PF57lblDI _YxZw_O8dWkTljptcO7z SWDELhWFjL8JxEtm91_o _1jTZ8KXRZul60S6czNi">
+                        <!-- Card Title -->
+                        <div
+                            class="YRrCJSr_j5nopfm4duUc sJNGKHxFYdN5Nzml5J2j Q_jg_EPdNf9eDMn1mLI2 hD0sTTDgbxakubcHVW2X">
+                            <div>
+                                <h3
+                                    class="TR_P65x9ie7j6uxFo_Cs vyo_A8gnQD1QWDPglr3h IOPhczRgtphv6NdNBDjj __9sbu0yrzdhGIkLWNXl OyABRrnTV_kvHV7dJ0uE">
+                                    Transactions</h3>
+                                <span
+                                    class="d3C8uAdJKNl1jzfE9ynq _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 XIIs8ZOri3wm8Wnj9N_y">This
+                                    is a list of latest transactions</span>
+                            </div>
+                            <div class="VQS2tmQ_zFyBOC2tkmto">
+                                <a href="#"
+                                    class="FJRldeiG2gFGZfuKgp88 c8dCx6gnV43hTOLV6ks5 ezMFUVl744lvw6ht0lFe mveJTCIb2WII7J4sY22F OQflBVxALl1Ntbyc2J2_ _7KA5gD55t2lxf9Jkj20 fZf6W_ZtzEh6EEqmWMA9 OPrb_iG5WDy_7F05BDOX">View
+                                    all</a>
+                            </div>
+                        </div>
+                        <!-- Table -->
+                        <div class="YRrCJSr_j5nopfm4duUc e8VqoQNK0mbkRFDL3LMV R2oNx0cNtxO_M_VVt390">
+                            <div class="_IebywwKB6L2zG0BTy63 mveJTCIb2WII7J4sY22F">
+                                <div class="VPGGthdu3cy_ZP7AL7dt TK9h2c2b79uBgR_cJzCE u0Aizb1ol0gBXDISYKJM">
+                                    <div class="wBVMFkIGfrKshbvi2gS1 mngKhi_Rv06PF57lblDI PTS4x_A1HVmoZYJHkYaG">
+                                        <table
+                                            class="TK9h2c2b79uBgR_cJzCE Zy1Pypi71Xu6guex6urN NIAblPiyeuYQ0zW671xb PoeKYEQfG4WfmL9xM6vu">
+                                            <thead class="jtAJHOc7mn7b4IKRO59D jqg6J89cvxmDiFpnV56r">
+                                                <tr>
+                                                    <th scope="col"
+                                                        class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
+                                                        Transaction
+                                                    </th>
+                                                    <th scope="col"
+                                                        class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
+                                                        Date &amp; Time
+                                                    </th>
+                                                    <th scope="col"
+                                                        class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
+                                                        Amount
+                                                    </th>
+                                                    <th scope="col"
+                                                        class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
+                                                        Status
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="_Ybd3WwuTVljUT4vEaM3 _1jTZ8KXRZul60S6czNi">
+                                                <tr>
+                                                    <td
+                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
+                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">Bonnie
+                                                            Green</span>
+                                                    </td>
+                                                    <td
+                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
+                                                        Mar 23 ,2021
+                                                    </td>
+                                                    <td
+                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
+                                                        $560
+                                                    </td>
+                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
+                                                        <span
+                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="h-4"></div>
                     <div
                         class="_wYiJGbRZyFZeCc8y7Sf _Ybd3WwuTVljUT4vEaM3 mveJTCIb2WII7J4sY22F mngKhi_Rv06PF57lblDI _YxZw_O8dWkTljptcO7z SWDELhWFjL8JxEtm91_o _1jTZ8KXRZul60S6czNi">
                         <!-- Card Title -->
@@ -489,182 +561,35 @@
                                                         $2300
                                                     </td>
                                                     <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="jtAJHOc7mn7b4IKRO59D jqg6J89cvxmDiFpnV56r">
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment refund to <span
-                                                            class="yM_AorRf2jSON3pDsdrz">#00910</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 23 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        -$670
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment failed from <span
-                                                            class="yM_AorRf2jSON3pDsdrz">#087651</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 18 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $234
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="__CUdK3mSkcMQpxc1Lod Ef5_B3RB6nYIDCJEExiM ZN_OBnKt2VQjvkKnCO6j gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Cancelled</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="jtAJHOc7mn7b4IKRO59D jqg6J89cvxmDiFpnV56r">
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">Lana
-                                                            Byrd</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 15 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $5000
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="k1sFscPcBz_oMeiTaKv8 _41_Z5QiP4N8JuoiJWkX gxqPdw4EewWD7Ph9huFn gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">In
-                                                            progress</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">Jese
-                                                            Leos</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 15 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $2300
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="jtAJHOc7mn7b4IKRO59D jqg6J89cvxmDiFpnV56r">
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">THEMESBERG
-                                                            LLC</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 11 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $560
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
-                                                    </td>
-                                                </tr>
+                                                        <form action="">
+                                                            @csrf
+                                                            <button
+                                                                class="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-md">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="h-5 w-5 mr-2" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path stroke-linecap="round"
+                                                                        stroke-linejoin="round" stroke-width="2"
+                                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                                </svg>
 
-                                                <tr>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">Lana
-                                                            Lysle</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 6 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $1437
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="jtAJHOc7mn7b4IKRO59D jqg6J89cvxmDiFpnV56r">
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment to <span class="yM_AorRf2jSON3pDsdrz">Joseph
-                                                            Mcfall</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Apr 1 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $980
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">Alphabet
-                                                            LLC</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Mar 23 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $11,436
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="k1sFscPcBz_oMeiTaKv8 _41_Z5QiP4N8JuoiJWkX gxqPdw4EewWD7Ph9huFn gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">In
-                                                            progress</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="jtAJHOc7mn7b4IKRO59D jqg6J89cvxmDiFpnV56r">
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        Payment from <span class="yM_AorRf2jSON3pDsdrz">Bonnie
-                                                            Green</span>
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
-                                                        Mar 23 ,2021
-                                                    </td>
-                                                    <td
-                                                        class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                        $560
-                                                    </td>
-                                                    <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
-                                                        <span
-                                                            class="Dnqe3vvw22y12_oWDYvR LNUrv_nGG839SRkGqY8B UptwuMAvsdRjvAaYNP6r gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe fhCwost7CSNRc2WSHLFW St_AVDyTHE88JaawJoRQ Zs2BLzUMh0_yTpU6xCcU W5n_NSFnC6y2nqoHw_5x">Completed</span>
+                                                                Delete
+                                                            </button>
+                                                        </form>
+                                                        <form action="">
+                                                            <button
+                                                                class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="h-5 w-5 mr-2" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor">
+                                                                    <path stroke-linecap="round"
+                                                                        stroke-linejoin="round" stroke-width="2"
+                                                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                                                </svg>
+                                                                Modifier
+                                                            </button>
+                                                        </form>
+
                                                     </td>
                                                 </tr>
                                             </tbody>
