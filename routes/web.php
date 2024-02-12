@@ -18,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin');
-Route::get('/patient/home', [PatientController::class, 'index'])->name('patient');
-Route::get('/doctor/home', [MedecinController::class, 'index'])->name('doctor');
+Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+Route::get('/patient/home', [PatientController::class, 'index'])->name('patient.dashboard');
+Route::get('/doctor/home', [MedecinController::class, 'index'])->name('doctor.dashboard');
 
 
 
