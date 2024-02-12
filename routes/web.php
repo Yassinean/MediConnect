@@ -33,7 +33,7 @@ Route::put('/admin/speciality/{id}', [SpecialityController::class, 'update'])->n
 Route::delete('/admin/speciality/{id}', [SpecialityController::class, 'destroy'])->name('speciality.deleteSpeciality');
 /** End Speciality controller */
 /** Medicament controller */
-Route::post('/admin/medicament', [MedicamentController::class, ' ajouterMedicament'])->name('medicament.ajouterMedicament');
+Route::post('/admin/medicament', [MedicamentController::class, 'ajouterMedicament'])->name('medicament.ajouterMedicament');
 Route::get('/admin/dashboard', [MedicamentController::class, 'index']);
 Route::get('/admin/medicament', [MedicamentController::class, 'allMedicament'])->name('medicament.allMedicament');
 Route::put('/admin/medicament/{id}', [MedicamentController::class, 'update'])->name('medicament.ModiMedicament');
