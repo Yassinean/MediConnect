@@ -9,12 +9,11 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function index(Request $r)
     {
         $specialityCount = Speciality::count();
         $medecinCount = Medecin::count();
         $patientCount = Patient::count();
-        return view('dashboard', compact('specialityCount', 'medecinCount', 'patientCount'));
-        // return view('dashboard');
+        return view('admin.dashboard', compact('specialityCount', 'medecinCount', 'patientCount'));
     }
 }

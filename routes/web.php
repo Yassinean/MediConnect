@@ -27,25 +27,26 @@ Route::get('/admin/medicament', [MedicamentController::class, 'allMedicament'])-
 
 /** Speciality controller */
 Route::post('/admin/speciality', [SpecialityController::class, 'ajouterSpeciality'])->name('speciality.ajouterSpeciality');
-Route::get('/admin/dashboard', [specialityController::class, 'index']);
+Route::get('/admin/dashboard', [specialityController::class, 'index'])->name('admin.dashboard');
 Route::get('/admin/speciality', [specialityController::class, 'allSpeciality'])->name('speciality.allSpeciality');
 Route::put('/admin/speciality/{id}', [SpecialityController::class, 'update'])->name('speciality.ModiSpeciality');
 Route::delete('/admin/speciality/{id}', [SpecialityController::class, 'destroy'])->name('speciality.deleteSpeciality');
 /** End Speciality controller */
 /** Medicament controller */
 Route::post('/admin/medicament', [MedicamentController::class, 'ajouterMedicament'])->name('medicament.ajouterMedicament');
-Route::get('/admin/dashboard', [MedicamentController::class, 'index']);
+Route::get('/admin/dashboard', [MedicamentController::class, 'index'])->name('admin.dashboard');
 Route::get('/admin/medicament', [MedicamentController::class, 'allMedicament'])->name('medicament.allMedicament');
 Route::put('/admin/medicament/{id}', [MedicamentController::class, 'update'])->name('medicament.ModiMedicament');
 Route::delete('/admin/medicament/{id}', [MedicamentController::class, 'destroy'])->name('medicament.deleteMedicament');
 /** End Medicament controller */
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('admin.dashboard');
+// })->middleware(['auth', 'verified'])->name('admin.dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -58,7 +58,7 @@ class RegisteredUserController extends Controller
 
         if ($user->role == 'Patient') {
             Auth::login($user);
-            return redirect()->route('patient');
+            return redirect()->route('patient.dashboard');
         } elseif ($user->role == 'Médecin') {
             Auth::login($user);
             return redirect()->route('doctor.dashboard');

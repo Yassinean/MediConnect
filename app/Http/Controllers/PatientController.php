@@ -11,9 +11,9 @@ class PatientController extends Controller
 {
     public function index()
     {
-        $specialityCount = Speciality::count();
-        $medecinCount = Medecin::count();
-        $patientCount = Patient::count();
-        return view('patient.dashboard',$specialityCount,$medecinCount,$patientCount);
+        // $specialityCount = Speciality::count();
+        // $medecinCount = Medecin::count();
+        // $patientCount = Patient::count();
+        return view('patient.dashboard');
     }
 }

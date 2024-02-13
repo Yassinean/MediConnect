@@ -14,7 +14,7 @@ class SpecialityController extends Controller
         $specialityCount = Speciality::count();
         $medecinCount = Medecin::count();
         $patientCount = Patient::count();
-        return view('dashboard', compact('specialityCount', 'medecinCount', 'patientCount'));
+        return view('admin.dashboard', compact('specialityCount', 'medecinCount', 'patientCount'));
     }
     public function allSpeciality()
     {
