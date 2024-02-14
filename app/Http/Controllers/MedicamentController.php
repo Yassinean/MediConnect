@@ -26,9 +26,11 @@ class MedicamentController extends Controller
     {
         $request->validate([
             'MedicamentName' => 'required',
+            'prix' => 'required',
         ]);
         Medicament::create([
             'MedicamentName' => $request->MedicamentName,
+            'prix' => $request->prix,
         ]);
         return redirect()->route('medicament.ajouterMedicament');
     }
@@ -36,12 +38,14 @@ class MedicamentController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'MedicamentName' => 'required',
+            'nom' => 'required',
+            'price' => 'required',
         ]);
 
         $speciality = Medicament::findOrFail($id);
         $speciality->update([
-            'MedicamentName' => $request->MedicamentName,
+            'MedicamentName' => $request->nom,
+            'prix' => $request->price,
         ]);
 
         return redirect()->route('medicament.allMedicament');

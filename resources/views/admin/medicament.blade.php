@@ -374,6 +374,14 @@
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                             placeholder="Nom" required="">
                                     </div>
+                                    <div class="col-span-2">
+                                        <label for="name"
+                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Prix
+                                            du médicament</label>
+                                        <input type="text" name="prix" id="prix"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                            placeholder="999.99" required="">
+                                    </div>
                                 </div>
                                 <button type="submit"
                                     class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -429,7 +437,7 @@
                                                     </th>
                                                     <th scope="col"
                                                         class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
-                                                        Amount
+                                                        Prix
                                                     </th>
                                                     <th colspan="2"
                                                         class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
@@ -450,7 +458,7 @@
                                                         </td>
                                                         <td
                                                             class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                            $2300
+                                                            {{ $s->prix }} DH
                                                         </td>
                                                         <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
                                                             <form
@@ -479,12 +487,14 @@
                                                                 <button
                                                                     class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                                                     type="button"
-                                                                    data-modal-toggle="authentication-modal">
+                                                                    data-modal-target="authentication-modal{{ $s->id }}"
+                                                                    data-modal-toggle="authentication-modal{{ $s->id }}">
                                                                     Modifier
                                                                 </button>
 
                                                                 <!-- Main modal -->
-                                                                <div id="authentication-modal" aria-hidden="true"
+                                                                <div id="authentication-modal{{ $s->id }}"
+                                                                    aria-hidden="true"
                                                                     class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
                                                                     <div
                                                                         class="relative w-full max-w-md px-4 h-full md:h-auto">
@@ -494,7 +504,7 @@
                                                                             <div class="flex justify-end p-2">
                                                                                 <button type="button"
                                                                                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                                                                                    data-modal-toggle="authentication-modal">
+                                                                                    data-modal-toggle="authentication-modal{{ $s->id }}">
                                                                                     <svg class="w-5 h-5"
                                                                                         fill="currentColor"
                                                                                         viewBox="0 0 20 20"
@@ -507,10 +517,11 @@
                                                                             </div>
                                                                             <form
                                                                                 class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8"
-                                                                                action="{{ route('medicament.ModiMedicament', $s->id) }}"
+                                                                                action="{{ route('medicament.ModiMedicament', ['id' => $s->id]) }}"
                                                                                 method="POST" class="p-4 md:p-5">
                                                                                 @csrf
-                                                                                @method('PUT')>
+                                                                                @method('PUT')
+
                                                                                 <h3
                                                                                     class="text-xl font-medium text-gray-900 dark:text-white">
                                                                                     Modifier médicament</h3>
@@ -519,8 +530,16 @@
                                                                                         class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Nouvel
                                                                                         médicament </label>
                                                                                     <input type="text"
-                                                                                        id="name"
-                                                                                        name="MedicamentName"
+                                                                                        id="name" name="nom"
+                                                                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                                                        required="">
+                                                                                </div>
+                                                                                <div>
+                                                                                    <label for="price"
+                                                                                        class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">Nouvel
+                                                                                        prix </label>
+                                                                                    <input type="text"
+                                                                                        id="prix" name="price"
                                                                                         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                                                                         required="">
                                                                                 </div>

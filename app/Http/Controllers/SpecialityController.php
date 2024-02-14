@@ -26,6 +26,7 @@ class SpecialityController extends Controller
         $request->validate([
             'specialityName' => 'required',
         ]);
+
         Speciality::create([
             'specialityName' => $request->specialityName,
         ]);

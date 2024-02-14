@@ -34,7 +34,7 @@ class AuthenticatedSessionController extends Controller
         } elseif (Auth::user()->role === 'Médecin') {
             return redirect()->route('doctor.dashboard');
         } elseif (Auth::user()->role === 'Patient') {
-            return redirect()->route('patient.dashboard');
+            return redirect('patient/home');
         }
         return redirect()->intended(RouteServiceProvider::HOME);
     }

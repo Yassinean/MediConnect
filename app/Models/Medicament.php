@@ -11,5 +11,6 @@ class Medicament extends Model
 
     protected $fillable = [
         'MedicamentName',
+        'prix',
     ];
 }

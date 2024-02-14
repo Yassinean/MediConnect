@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('medecins', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_user')->constrained('users');
-            $table->foreignId('id_spaciality')->constrained('specialities');
+            $table->foreignId('id_speciality')->constrained('specialities');
             $table->timestamps();
         });
     }

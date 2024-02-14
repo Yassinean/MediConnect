@@ -427,13 +427,9 @@
                                                         class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
                                                         Date &amp; Time
                                                     </th>
-                                                    <th scope="col"
-                                                        class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
-                                                        Amount
-                                                    </th>
                                                     <th colspan="2"
                                                         class="_wYiJGbRZyFZeCc8y7Sf gMXmdpOPfqG_3CKkL0VD ezMFUVl744lvw6ht0lFe _fj5qD1qKucIHy44xhzZ upQp7iWehfaU8VTbfx_w PeR2JZ9BZHYIH8Ea3F36 sdSaZcRa4_We5kKaX4pf OyABRrnTV_kvHV7dJ0uE">
-                                                        Status
+                                                        Action
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -447,10 +443,6 @@
                                                         <td
                                                             class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 _43MO1gcdi2Y0RJW1uHL PeR2JZ9BZHYIH8Ea3F36 BHrWGjM1Iab_fAz0_91H XIIs8ZOri3wm8Wnj9N_y">
                                                             {{ $s->created_at }}
-                                                        </td>
-                                                        <td
-                                                            class="_wYiJGbRZyFZeCc8y7Sf c8dCx6gnV43hTOLV6ks5 yM_AorRf2jSON3pDsdrz __9sbu0yrzdhGIkLWNXl BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">
-                                                            $2300
                                                         </td>
                                                         <td class="_wYiJGbRZyFZeCc8y7Sf BHrWGjM1Iab_fAz0_91H">
                                                             <form
@@ -479,12 +471,13 @@
                                                                 <button
                                                                     class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                                                     type="button"
-                                                                    data-modal-toggle="authentication-modal">
+                                                                    data-modal-target="authentication-modal{{ $s->id }}"
+                                                                    data-modal-toggle="authentication-modal{{ $s->id }}">
                                                                     Modifier
                                                                 </button>
 
                                                                 <!-- Main modal -->
-                                                                <div id="authentication-modal" aria-hidden="true"
+                                                                <div id="authentication-modal{{ $s->id }}" aria-hidden="true"
                                                                     class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
                                                                     <div
                                                                         class="relative w-full max-w-md px-4 h-full md:h-auto">
@@ -494,7 +487,7 @@
                                                                             <div class="flex justify-end p-2">
                                                                                 <button type="button"
                                                                                     class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                                                                                    data-modal-toggle="authentication-modal">
+                                                                                    data-modal-toggle="authentication-modal{{ $s->id }}">
                                                                                     <svg class="w-5 h-5"
                                                                                         fill="currentColor"
                                                                                         viewBox="0 0 20 20"
