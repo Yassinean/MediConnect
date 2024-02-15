@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Speciality extends Model
+class RendezVous extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'specialityName',
+        'date',
+        'heure',
+        'speciality',
+        'name',
     ];
 
-    public function medecin()
-    {
-        return $this->hasMany(Medecin::class, 'id_specialty');  
-    }
+    protected $dates = ['date', 'heure'];
 }

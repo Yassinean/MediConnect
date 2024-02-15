@@ -6,6 +6,8 @@ use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SpecialityController;
 use App\Http\Controllers\MedicamentController;
+use App\Http\Controllers\ProfileMedecinController;
+use App\Http\Controllers\RendezVousController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +41,18 @@ Route::get('/admin/medicament', [MedicamentController::class, 'allMedicament'])-
 Route::put('/admin/medicament/{id}', [MedicamentController::class, 'update'])->name('medicament.ModiMedicament');
 Route::delete('/admin/medicament/{id}', [MedicamentController::class, 'destroy'])->name('medicament.deleteMedicament');
 /** End Medicament controller */
+
+/** Patient controller */
+Route::get('/patient/home', [PatientController::class, 'index'])->name('index');
+
+/** End Patient controller */
+
+Route::get('/patient/doctor_profile', [ProfileMedecinController::class , 'index'])->name('doctor_profile');
+Route::get('/doctor_profile/{id}', [ProfileMedecinController::class, 'show'])->name('doctor_profile');
+
+Route::get('/rendez-vous', [RendezVousController::class, 'create'])->name('doctor_profile');
+
+
 
 Route::get('/', function () {
     return view('welcome');

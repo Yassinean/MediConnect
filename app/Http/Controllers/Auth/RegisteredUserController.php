@@ -52,13 +52,13 @@ class RegisteredUserController extends Controller
         } elseif ($request->role == 'Médecin') {
             $medecin = Medecin::create([
                 'id_user' => $user->id,
-                'id_spaciality' => $request->specialty,
+                'id_speciality' => $request->specialty,
             ]);
         }
 
         if ($user->role == 'Patient') {
             Auth::login($user);
-            return redirect()->route('patient.dashboard');
+            return redirect('patient/home');
         } elseif ($user->role == 'Médecin') {
             Auth::login($user);
             return redirect()->route('doctor.dashboard');

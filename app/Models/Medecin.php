@@ -11,10 +11,10 @@ class Medecin extends Model
 
     protected $fillable = [
         'id_user',
-        'id_spaciality',
+        'id_speciality',
     ];
 
-    public function spaciality()
+    public function speciality()
     {
         return $this->belongsTo(Speciality::class, 'id');
     }
