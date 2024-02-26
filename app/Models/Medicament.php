@@ -13,4 +13,9 @@ class Medicament extends Model
         'MedicamentName',
         'prix',
     ];
+
+    public function dossiers()
+    {
+        return $this->belongsToMany(Dossier::class);
+    }
 }

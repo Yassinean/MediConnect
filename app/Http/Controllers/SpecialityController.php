@@ -21,6 +21,11 @@ class SpecialityController extends Controller
         $specialities = Speciality::all();
         return view('admin.speciality', compact('specialities'));
     }
+    public function allSpecialityIndex()
+    {
+        $specialities = Speciality::all();
+        return view('welcome', compact('specialities'));
+    }
     public function ajouterSpeciality(Request $request)
     {
         $request->validate([

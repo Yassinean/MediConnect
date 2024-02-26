@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Medicament;
 use App\Models\Speciality;
 use Illuminate\Http\Request;
 
@@ -9,12 +10,12 @@ class MedecinController extends Controller
 {
     public function index()
     {
-        return view('doctor.dashboard');
+        $drugs = Medicament::all();
+        return view('doctor.medicament', compact('drugs'));
     }
-
     public function allSpeciality()
     {
-        $specialities = Speciality::all();
-        return view('auth.register', compact('specialities'));
+        $allSpeciality = Speciality::all();
+        return view('doctor.medicament', compact('allSpeciality'));
     }
 }

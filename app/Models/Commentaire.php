@@ -5,28 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class RendezVous extends Model
+class Commentaire extends Model
 {
     use HasFactory;
-    protected $table = 'rendez_vouses';
+
     protected $fillable = [
-        'patient_id',
         'medecin_id',
-        'date',
+        'patient_id',
+        'commentaire',
+         'star_rating',
+        'status',
     ];
 
-    public function patient()
+    public function user()
     {
-        return $this->belongsTo(Patient::class, 'patient_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function medecin()
     {
         return $this->belongsTo(Medecin::class, 'medecin_id');
-    }
-
-    public function dossier()
-    {
-        return $this->hasOne(Dossier::class);
     }
 }

@@ -45,16 +45,21 @@ class User extends Authenticatable
     ];
 
 
-    public function medicines()
+    public function medecins()
     {
-        return $this->hasOne(Medecin::class, 'id');
+        return $this->hasOne(Medecin::class, 'id_user');
     }
     public function patients()
     {
-        return $this->hasOne(Patient::class, 'id');
+        return $this->hasOne(Patient::class, 'id_user');
     }
     public function admins()
     {
         return $this->hasOne(Admin::class, 'id');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Commentaire::class, 'user_id');
     }
 }

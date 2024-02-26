@@ -12,10 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('medecins', function (Blueprint $table) {
+            // $table->id();
+            // $table->foreignId('id_user')->constrained('users');
+            // $table->foreignId('id_speciality')->constrained('specialities');
+            // $table->timestamps();
             $table->id();
-            $table->foreignId('id_user')->constrained('users');
-            $table->foreignId('id_speciality')->constrained('specialities');
+            $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('id_speciality');
             $table->timestamps();
+
+            // Define foreign key constraints
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_speciality')->references('id')->on('specialities')->onDelete('cascade');
         });
     }
 

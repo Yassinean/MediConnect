@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rendez_vous', function (Blueprint $table) {
+        Schema::create('rendez_vouses', function (Blueprint $table) {
             $table->id();
-            $table->string('speciality');
-            $table->string('name');
-            $table->date('date');
-            $table->time('heure');
+            $table->foreignId('patient_id')->constrained('patients');
+            $table->foreignId('medecin_id')->constrained('medecins');
+            $table->enum('date', ['08:00', '09:00', '10:00', '11:00', '14:00', '15:00', '16:00', '17:00']);
+            $table->boolean('isUrgent')->default(false);
             $table->timestamps();
         });
     }

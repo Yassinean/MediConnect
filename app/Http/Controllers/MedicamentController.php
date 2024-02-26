@@ -22,6 +22,7 @@ class MedicamentController extends Controller
         $specialities = Medicament::all();
         return view('admin.medicament', compact('specialities'));
     }
+
     public function ajouterMedicament(Request $request)
     {
         $request->validate([
@@ -34,12 +35,25 @@ class MedicamentController extends Controller
         ]);
         return redirect()->route('medicament.ajouterMedicament');
     }
+    public function ajouterMedicamentMedecin(Request $request)
+    {
+        $request->validate([
+            'MedicamentName' => 'required',
+            'prix' => 'required',
+        ]);
+        Medicament::create([
+            'MedicamentName' => $request->MedicamentName,
+            'prix' => $request->prix,
+        ]);
+        // dd($request);
+        return redirect()->route('doctor.medicament');
+    }
 
     public function update(Request $request, $id)
     {
         $request->validate([
             'nom' => 'required',
-            'price' => 'required',
+            'prix' => 'required',
         ]);
 
         $speciality = Medicament::findOrFail($id);
@@ -56,6 +70,6 @@ class MedicamentController extends Controller
         $speciality = Medicament::findOrFail($id);
         $speciality->delete();
 
-        return redirect()->route('medicament.allMedicament');
+        return back();
     }
 }

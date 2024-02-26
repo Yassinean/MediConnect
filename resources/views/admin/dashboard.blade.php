@@ -10,11 +10,11 @@
     <meta name="generator" content="Hugo 0.88.1">
 
     <title>Mediconnect | Admin</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     <link rel="canonical" href="https://flowbite.com/application-ui/demo/">
 
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
@@ -97,8 +97,7 @@
                         </svg>
                     </button>
                     <a href="/" class="YRrCJSr_j5nopfm4duUc YcuQRAYEep0W4L0BFDfG">
-                        <img src="https://flowbite.com/application-ui/demo/images/logo.svg"
-                            class="R9nujHypnXyuHrBww9QK mWvJQyBFgwNGEt0h7bSP" alt="FlowBite Logo">
+                        <img src="" class="R9nujHypnXyuHrBww9QK mWvJQyBFgwNGEt0h7bSP" alt="FlowBite Logo">
                         <span
                             class="_rCfAafI7lqYALljdSxM q1oXbofRCOhVhOSB8tiU yM_AorRf2jSON3pDsdrz BHrWGjM1Iab_fAz0_91H OyABRrnTV_kvHV7dJ0uE">Mediconnect</span>
                     </a>
@@ -235,7 +234,7 @@
                                 </form>
                             </li>
                             <li>
-                                <a href="https://flowbite.com/application-ui/demo/"
+                                <a href="{{ route('admin.dashboard') }}"
                                     class="YRrCJSr_j5nopfm4duUc Q_jg_EPdNf9eDMn1mLI2 FJRldeiG2gFGZfuKgp88 d3C8uAdJKNl1jzfE9ynq _43MO1gcdi2Y0RJW1uHL __9sbu0yrzdhGIkLWNXl mveJTCIb2WII7J4sY22F _7KA5gD55t2lxf9Jkj20 BpcA_ZTX79XDgSc71n2v duXR6Hcu_44X_243WcOl OPrb_iG5WDy_7F05BDOX">
                                     <svg class="YIUegm7fh_CpJbivTu6B MnxxlQlR1H0xJuMEE8Yr PeR2JZ9BZHYIH8Ea3F36 bcsWqjK52oeyT6oeC2Az gZ3KuFw1JESHhOJhjT8j _Oyukq8JlN1X9w2FmPds XIIs8ZOri3wm8Wnj9N_y Lld6j9B1iilEqA6j31e4"
                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -246,7 +245,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{route('speciality.ajouterSpeciality')}}"
+                                <a href="{{ route('speciality.ajouterSpeciality') }}"
                                     class="d3C8uAdJKNl1jzfE9ynq __9sbu0yrzdhGIkLWNXl _43MO1gcdi2Y0RJW1uHL mveJTCIb2WII7J4sY22F _7KA5gD55t2lxf9Jkj20 YRrCJSr_j5nopfm4duUc Q_jg_EPdNf9eDMn1mLI2 FJRldeiG2gFGZfuKgp88 BpcA_ZTX79XDgSc71n2v duXR6Hcu_44X_243WcOl OPrb_iG5WDy_7F05BDOX">
                                     <svg class="VQS2tmQ_zFyBOC2tkmto YIUegm7fh_CpJbivTu6B MnxxlQlR1H0xJuMEE8Yr PeR2JZ9BZHYIH8Ea3F36 bcsWqjK52oeyT6oeC2Az gZ3KuFw1JESHhOJhjT8j _Oyukq8JlN1X9w2FmPds XIIs8ZOri3wm8Wnj9N_y Lld6j9B1iilEqA6j31e4"
                                         fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

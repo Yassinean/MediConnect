@@ -14,16 +14,26 @@ class PatientController extends Controller
     {
         $specialities = Speciality::all();
 
-        $doctorsQuery = Medecin::with('user', 'speciality')
-            ->join('users', 'medecins.id_user', '=', 'users.id')
-            ->join('specialities', 'medecins.id_speciality', '=', 'specialities.id');
+        $speciality = $request->input('speciality');
+        $medecinQuery = Medecin::query();
+        if ($speciality && $speciality !== 'Tout') {
+            $medecinQuery = $medecinQuery->where('id_speciality', $speciality);
+        }
+        $medecin = $medecinQuery->get();
+
+        return view('patient.dashboard', compact('specialities', 'medecin'));
+    }
+    public function indexHome(Request $request)
+    {
+        $specialities = Speciality::all();
 
         $speciality = $request->input('speciality');
+        $medecinQuery = Medecin::query();
         if ($speciality && $speciality !== 'Tout') {
-            $doctorsQuery->where('specialities.id', $speciality);
+            $medecinQuery = $medecinQuery->where('id_speciality', $speciality);
         }
+        $medecin = $medecinQuery->get();
 
-        $medecin = $doctorsQuery->get();
-        return view('patient.dashboard', compact('specialities', 'medecin'));
+        return view('welcome', compact('specialities', 'medecin'));
     }
 }

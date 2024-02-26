@@ -20,6 +20,10 @@ class Medecin extends Model
     }
     public function user()
     {
-        return $this->belongsTo(User::class, 'id');
+        return $this->belongsTo(User::class, 'id_user');
+    }
+    public function rendezvous()
+    {
+        return $this->hasMany(Rendezvous::class);
     }
 }
